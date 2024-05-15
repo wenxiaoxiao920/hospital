@@ -1,0 +1,132 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>医院官网</title>  
+    <!-- 引入Bootstrap CSS -->  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- 自定义CSS -->  
+    <link rel="stylesheet" href="./style.css">  
+</head>  
+<body>  
+    <header>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 20px;">  
+            <img src="image/logo.png" width="60" height="60" class="d-inline-block align-top" alt="logo" style="margin-right: 20px;">
+             博大医院
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+                <span class="navbar-toggler-icon"></span>  
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 680px;">  
+                <ul class="navbar-nav">  
+                    <li class="nav-item active">  
+                        <a class="nav-link" href="#hospital-intro">医院介绍 </a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#departments">科室介绍 </a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#doctors">医生介绍 </a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#visit-process">就诊须知 </a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="#contact">联系我们</a>  
+                    </li>  
+                    <li class="nav-item">  
+                      <a class="nav-link" href="http://192.168.1.8:80/">后台管理系统 </a>  
+                  </li>  
+                </ul>  
+            </div>   
+        </nav>  
+    </header>  
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/lunbo1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/lunbo2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/lunbo3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+        <!-- 这里放置医院介绍、科室介绍、医生介绍、就诊流程、联系我们的具体内容 -->  
+        <!-- ... -->  
+      <div id="hospital-intro">
+          <h1>医院介绍</h1>
+          <span>HOSPITAL INTRODUCTION</span>
+          <p>
+          博大医院创建于1953年，1955年建成开诊，是直属于山西省卫生健康委员会的一所集医疗、教学、科研、预防、康复、保健、急救为一体的综合型三级甲等医院，是山西省最大的医疗机构之一，担负着包括急危重症在内的各种医疗救治、突发公共卫生应急和重大任务抢险以及干部保健等职能，医疗服务范围遍及全省各地及周边省份。近年来医院以习近平新时代中国特色社会主义思想为指引，全面贯彻落实党中央新时代卫生与健康工作方针，加强公立医院党的建设，推动公立医院综合改革攻坚，始终坚持“人民医院为人民，为人民健康服务”的宗旨，秉承“仁心、仁术、敬业、求精”的省医精神，围绕“医院有品牌、学科有名师、专业有特色、个人有专长”的发展目标，致力于建成“功能完整、服务优良、政府信任、百姓放心、职工满意”的创新型现代化综合医院。
+          <br><hr>综合实力位居全省前列。医院核定床位2850张，内设机构数94个，其中职能处（科）室33个，临床科室43个，医技科室18个。现有基层党支部42个，共有中共党员1299名。医院总占地面积451.2亩为全省同级医院第一，形成北区医疗临床、南区科研教学、新区医防医养一体两翼的战略发展格局；全院万元以上设备6067台，专用设备价值14.23亿。年均门急诊135万人次，出院8万人次，手术3万人次。国家卫健委2018年度全国三级公立医院绩效考核排名全国98名。连续17年荣获全国文明单位荣誉称号。
+          <br><hr>学科建设成绩显著。近年来，医院构建起具有省医特色的学科体系，形成了山西省肾脏病与血液净化临床医学研究中心、山西省神经疾病临床医学研究中心、山西省消化系统疾病临床医学研究中心、山西省精准医学诊断治疗中心、山西省结直肠肛门疾病诊疗中心、山西省口腔疾病预防治疗中心、实验动物中心等7个省级医疗科研综合中心；山西省肾脏病精准医学工程研究中心、山西省泌尿系统疾病大数据工程研究中心、山西省实验动物基因工程研究中心、山西省脑卒中5G大数据分析及人工智能工程研究中心4个省级工程研究中心；肾脏病山西重点实验室、脑疾病防治山西重点实验室、脑肿瘤智能化研究山西省重点实验室3个省级重点实验室；山西省口腔健康防控技术创新中心1个省级技术创新中心。
+      </div>
+      <div id="departments">
+        <h1>科室介绍</h1>
+        <span>DEPARTMENT INTRODUCTION</span>
+        <p>博大医院科室分为手术科室、非手术科室、医技科室和综合科室四大类。其中手术科室包括神经外科、口腔外科、骨科、妇产科等20科；非手术科室包括消化科、皮肤科、儿科和神经内科等21科；医技科室包括放射科、检验科和超声科等19科；综合科室包括急诊科、门诊部和心理门诊等7科。具体科室如下：</p>
+        <img src="./image/dept.png" alt="">
+      </div>
+      <div id="doctors">
+        <h1>医生介绍</h1>
+        <span>DEPARTMENT INTRODUCTION</span>
+          <div id="card-container">  
+            <!-- 卡片将在这里被动态添加 -->  
+          </div>  
+      </div>
+      <div id="visit-process">
+          <h1>就诊须知</h1>
+          <span>INSTRUCTIONS FOR MEDICAL TREATMENT</span>
+          <ul id="process-list" class="list-group">  
+            <!-- 列表项将在这里被动态添加 -->  
+          </ul> 
+      </div>
+      <div id="contact">
+        <h1>联系我们</h1>
+        <span>CONTACT US</span>
+        <ul class="m-con_list">
+          <li>
+              <img src="image/call.png" alt="电话">
+              <span>13835116581</span>
+          </li>
+          <li>
+              <img src="image/address.png" alt="地址">
+              <span>山西省太原市</span>
+          </li>
+          <li>
+              <img src="image/wechar.png" alt="微信">
+              <span class="lost-public">13835116581(同手机号)</span>
+          </li>
+      </ul>
+      </div>
+  
+    <footer>  
+        <!-- Footer内容 -->  
+        <div class="foot">
+          <div>
+              <img src="image/logo.png" alt="logo">
+          </div>
+          <p>博大医院 版权所有 Copyright@2024 wenrongrong All Rights Reserved</p>
+      </div>
+    </footer>  
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->  
+</body>  
+</html>
